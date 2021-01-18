@@ -1,0 +1,5 @@
+font/
+*.css
+!fontello.css
+!style.css
+

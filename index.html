@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/fontello.css" type="text/css">
+
     <title>Jurik</title>
   </head>
   <body>
@@ -20,11 +22,40 @@
           </nav>
           <button class="header__btn block-btn">Создать обращение</button>
           <div class="header__box">
-            <button type="button" class="header__menu"></button>
-            <a href="" class="header__bell"></a>
+            <button type="button" class="header__menu">
+              <i class="icon-menu"></i>
+            </button>
+            <a href="" class="header__bell">
+              <img src="/img/bell.svg" alt="bell" width="30px" height="30px">
+            </a>
           </div>
         </div>
       </div>
     </header>
+    <section class="section">
+      <div class="container section__title">
+        <span class="icon-jurist">Юристы</span>
+      </div>
+      <div class="container section__wrapper">
+        <div class="filter">
+          <form class="filter__form">
+            <input type="text" class="form__input" placeholder="Поиск">
+            <button class="form__submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+          <div class="filter__box">
+            <div class="rating">
+              <div class="rating__text">Рейтинг юриста</div>
+              <div class="rating__value"></div>
+            </div>
+            <div class="price">
+              <div class="price__text">Цена</div>
+              <div class="price__value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
