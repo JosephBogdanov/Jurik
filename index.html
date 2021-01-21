@@ -39,7 +39,7 @@
       <section class="container section__wrapper">
         <section class="filter">
           <form class="filter__form">
-            <input type="text" class="form__input" placeholder="Поиск">
+            <input type="text" class="form__input" placeholder="Поиск ...">
             <button class="form__submit">
               <i class="icon-search"></i>
             </button>
@@ -71,7 +71,7 @@
             <button class="item-portfolio">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="5.0 stars">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
@@ -79,7 +79,7 @@
               <i class="icon-star non-active"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
@@ -587,7 +587,51 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
         </section>
-      </section>
+        <div class="section__paginator">        
+        </div>
+      </section>      
     </section>
+    <footer class="footer">
+      <div class="container footer-top">
+        <div class="footer-top__logo">
+          <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="footer-top__box">
+          <nav class="footer-top__menu">
+            <h2>Меню</h2>
+            <ul>
+              <a href="footer__item">Обращения</a><br>
+              <a href="footer__item">Юристы</a><br>
+              <a href="footer__item">Счета</a>
+            </ul>            
+          </nav>
+          <div class="footer-top__contacts">
+            <h2>Наши контакты</h2>
+            <p>Наш адрес:</p>
+            <p>Москва, ул Чехова дом 25, 2 этаж, каб 7.</p>
+            <p>Наш телефон:</p>
+            <p><a href="tel:8(495)456 56 56">8(495)456 56 56</a></p>
+            <p>Наш email:</p>
+            <p><a href="mailto:uirik_ru@mail.ru">uirik_ru@mail.ru</a></p>
+          </div>
+        </div>        
+      </div>
+      <div class="container footer-bottom">
+        <div class="footer-bottom__copyright"><span>© 2021 Юрик.ру, Inc. All rights reserved <br> 
+          · Конфиденциальность <br>
+          · Условия <br>
+          · Карта сайта</span></div>
+        <div class="footer-bottom__box">
+          <button class="footer-bottom__btn block-btn">Создать обращение</button>
+          <div class="footer-bottom__social">
+            <a class="icon-facebook" href=""></a>
+            <a class="icon-tripadvisor" href=""></a>
+            <a class="icon-odnoklassniki" href=""></a>
+            <a class="icon-vk" href=""></a>
+            <a class="icon-youtube" href=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
