@@ -581,7 +581,7 @@ body {
     border-color: #71a6e1; }
   .paginator-arrow a {
     position: relative; }
-  .paginator-arrow i:first-child {
+  .paginator-arrow i {
     position: absolute;
     left: -0.6px;
     bottom: -8px; }
