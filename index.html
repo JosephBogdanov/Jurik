@@ -11,9 +11,15 @@
   <body>
     <header class="header">
       <div class="container header__content">
-        <div class="header__logo"><img src="img/logo.svg" alt=""></a></div>
+        <div class="header__logo">
+          <picture>
+            <source srcset="img/logo.svg" type="image/svg+xml">
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.png" alt="logo">
+          </picture>
+        </div>
         <div class="header__container">
-          <nav class="header__nav">
+          <nav class="header__nav" title="Навигация">
             <ul>
               <li class="header__item"><a href="#">Обращения</a></li>
               <li class="header__item"><a href="#">Юристы</a></li>
@@ -22,11 +28,10 @@
           </nav>
           <button class="header__btn block-btn">Создать обращение</button>
           <div class="header__box">
-            <button type="button" class="header__menu">
+            <button type="button" class="header__menu" title="Меню">
               <i class="icon-menu"></i>
             </button>
-            <a href="" class="header__bell">
-              <img src="img/bell.svg" alt="bell" width="30px" height="30px">
+            <a href="#" class="icon-bell header__bell" title="Подписаться">
             </a>
           </div>
         </div>
@@ -34,18 +39,24 @@
     </header>
     <section class="section">
       <div class="container section__title">
-        <span class="icon-jurist">Юристы</span>
+        <div class="title__logo">
+          <i class="icon-jurist"></i>
+        </div>
+        <span>Юристы</span>
       </div>
       <section class="container section__wrapper">
         <section class="filter">
-          <form class="filter__form">
-            <input type="text" class="form__input" placeholder="Поиск ...">
-            <button class="form__submit">
-              <i class="icon-search"></i>
-            </button>
-          </form>
+          <div class="filter__form">
+            <form>
+              <input type="text" class="form__input" placeholder="Поиск ...">
+              <button class="form__submit" title="Поиск">
+                <i class="icon-search"></i>
+              </button>
+            </form>
+          </div>
+          
           <div class="filter__box">
-            <div class="rating">
+            <div class="rating" title="Рейтинг юриста">
               <div class="rating__text">Рейтинг юриста</div>
               <div class="rating__value">
                 <input  type="radio" id="star5" name="rating" value="5" /><label for="star5" class="icon-star"></label>
@@ -55,7 +66,7 @@
                 <input  type="radio" id="star1" name="rating" value="1" /><label for="star1" class="icon-star"></label>
               </div>
             </div>
-            <div class="price">
+            <div class="price" title="Стоимость услуг">
               <div class="price__text">Цена</div>
               <div class="price__value">
                 <input  type="radio" id="bag3" name="rating" value="3" /><label for="bag3" class="icon-money-bag"></label>
@@ -67,25 +78,30 @@
         </section>
         <section class="section__list">
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-1.webp" type="image/webp">
+                <img src="img/avatar-1.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating" title="5.0 stars">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <div class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></div>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -93,25 +109,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-2.webp" type="image/webp">
+                <img src="img/avatar-2.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -119,25 +140,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-3.webp" type="image/webp">
+                <img src="img/avatar-3.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -145,25 +171,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-4.webp" type="image/webp">
+                <img src="img/avatar-4.jpg" alt="logo">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -171,25 +202,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-1.webp" type="image/webp">
+                <img src="img/avatar-1.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд"> 
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -197,25 +233,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-2.webp" type="image/webp">
+                <img src="img/avatar-2.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -223,25 +264,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-3.webp" type="image/webp">
+                <img src="img/avatar-3.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -249,25 +295,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-4.webp" type="image/webp">
+                <img src="img/avatar-4.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -275,25 +326,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-1.webp" type="image/webp">
+                <img src="img/avatar-1.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -301,25 +357,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-2.webp" type="image/webp">
+                <img src="img/avatar-2.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -327,25 +388,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-3.webp" type="image/webp">
+                <img src="img/avatar-3.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -353,25 +419,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-4.webp" type="image/webp">
+                <img src="img/avatar-4.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -379,25 +450,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-1.webp" type="image/webp">
+                <img src="img/avatar-1.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -405,25 +481,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-2.webp" type="image/webp">
+                <img src="img/avatar-2.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -431,25 +512,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-3.webp" type="image/webp">
+                <img src="img/avatar-3.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -457,25 +543,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-4.webp" type="image/webp">
+                <img src="img/avatar-4.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -483,25 +574,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-1.webp" type="image/webp">
+                <img src="img/avatar-1.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" м><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -509,25 +605,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-2.webp" type="image/webp">
+                <img src="img/avatar-2.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -535,25 +636,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-3.webp" type="image/webp">
+                <img src="img/avatar-3.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста"> 
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-civil-cases civil-cases">Гражданские дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -561,25 +667,30 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
           <div class="section__item">
-            <img src="img/avatar-1.png" alt="" class="item-avatar">
-            <button class="item-portfolio">
+            <div  class="item-avatar">
+              <picture>
+                <source srcset="img/avatar-4.webp" type="image/webp">
+                <img src="img/avatar-4.jpg" alt="avatar of jurist">
+              </picture>
+            </div>
+            <button class="item-portfolio" title="Портфолио юриста">
               <i class="icon-portfolio"></i>
             </button>
-            <div class="item-rating">
+            <div class="item-rating" title="Рейтинг: 4.0 звезд">
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
               <i class="icon-star active"></i>
-              <i class="icon-star non-active"></i>
+              <i class="icon-star"></i>
             </div>
             <span class="item-name">Иван Адвокатыч</span>
-            <button class="item-speciality"><span class="icon-civil-cases">Гражданские дела</span></button>
+            <div class="item-speciality" title="Специализация юриста"><span class="icon-criminal criminal">Уголовные дела</span></div>
             <span class="item-text">Досудебное урегулировании 
               споров. Представительство 
               клиента в судах. Составление 
               процессуальных документов
               Обжалование судебных решений.</span>
-            <div class="item-price">
+            <div class="item-price" title="Стоимость услуг: средняя">
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag active"></i>
               <i class="icon-money-bag "></i>
@@ -587,17 +698,32 @@
             <button class="item-button block-btn">Обратиться</button>
           </div>
         </section>
-        <div class="section__paginator">        
+        <div class="section__paginator">
+          <ul>
+            <li title="Предыдущая страница"><a href="#" class="paginator-arrow"><i class="icon-next-left--active"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="paginator-points"></a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+            <li title="Следующая страница"><a href="#" class="paginator-arrow"><i class="icon-next-right--active "></i></a></li>
+          </ul>        
         </div>
       </section>      
     </section>
     <footer class="footer">
       <div class="container footer-top">
         <div class="footer-top__logo">
-          <img src="img/logo.svg" alt="logo">
+          <picture>
+            <source srcset="img/logo.svg" type="image/svg+xml">
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.png" alt="logo">
+          </picture>
         </div>
         <div class="footer-top__box">
-          <nav class="footer-top__menu">
+          <nav class="footer-top__menu" title="Меню">
             <h2>Меню</h2>
             <ul>
               <li class="footer-top__item"><a href="#">Обращения</a></li>
@@ -605,14 +731,14 @@
               <li class="footer-top__item"><a href="#">Счета</a></li>
             </ul>            
           </nav>
-          <div class="footer-top__contacts">
+          <div class="footer-top__contacts" title="Контакты">
             <h2>Контакты</h2>
             <p>Наш адрес:</p>
-            <span> <a href="">Москва, ул Чехова дом 25, 2 этаж, каб 7.</a></span>
+            <span title="Адрес"> <a href="#">Москва, ул Чехова дом 25, 2 этаж, каб 7.</a></span>
             <p>Наш телефон:</p>
-            <span><a href="tel:8(495)456 56 56">8(495)456 56 56</a></span>
+            <span title="Телефон"><a href="tel:8(495)456 56 56">8(495)456 56 56</a></span>
             <p>Наш email:</p>
-            <span><a href="mailto:uirik_ru@mail.ru">uirik_ru@mail.ru</a></span>
+            <span title="Почтовый адрес"><a href="mailto:uirik_ru@mail.ru">uirik_ru@mail.ru</a></span>
           </div>
         </div>        
       </div>
@@ -629,17 +755,12 @@
           <button class="footer-bottom__btn block-btn">Создать обращение</button>
           <div class="footer-bottom__social">
             <ul>
-              <li><a class="icon-facebook" href=""></a></li>
-              <li><a class="icon-tripadvisor" href=""></a></li>
-              <li><a class="icon-odnoklassniki" href=""></a></li>
-              <li><a class="icon-vk" href=""></a></li>
-              <li><a class="icon-youtube" href=""></a></li>
+              <li title="Переход на Facebook"><a class="icon-facebook" href="#"></a></li>
+              <li title="Переход на Tripadvisor"><a class="icon-tripadvisor" href="#"></a></li>
+              <li title="Переход на Одноклассники"><a class="icon-odnoklassniki" href="#"></a></li>
+              <li title="Переход во Вконтакте"><a class="icon-vk" href="#"></a></li>
+              <li title="Переход на Youtube"><a class="icon-youtube" href="#"></a></li>
           </ul>
-            
-            
-            
-            
-            
           </div>
         </div>
       </div>
