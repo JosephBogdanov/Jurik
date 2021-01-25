@@ -612,13 +612,13 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+    transition: 0.1s;
     &:active,
     &:focus {
       outline: 0;
     }
     &:active {
       text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
-      transition: 0.1s;
     }
   }
 }
