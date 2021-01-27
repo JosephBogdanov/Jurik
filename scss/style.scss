@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'variables';
 @import 'fonts';
+
 html {
   font-size: 62.5%;
 }
@@ -153,6 +154,7 @@ body {
 .section__title {
   width: 100%;
   height: 110px;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
 }
@@ -576,9 +578,6 @@ body {
     }
   }
 }
-.footer-bottom {
-  height: 33%;
-}
 .footer-top__contacts {
   font-size: 1.6rem;
   h2 {
@@ -601,7 +600,9 @@ body {
     color: inherit;
   }
 }
-
+.footer-bottom {
+  height: 33%;
+}
 .footer-bottom__copyright {
   color: $main-color;
   font-size: 1.4rem;
@@ -626,7 +627,7 @@ body {
   ul {
     list-style-type: none;
     position: relative;
-    right: 140px;
+    right: 20px;
   }
   li {
     display: inline;
@@ -646,3 +647,4 @@ body {
   position: relative;
   right: 30px;
 }
+@import 'adaptive';
