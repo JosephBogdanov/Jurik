@@ -1250,6 +1250,10 @@ body {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
+  .section__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .filter {
     display: -webkit-box;
     display: -ms-flexbox;
