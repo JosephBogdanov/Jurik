@@ -64,19 +64,19 @@ select {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 400;
-  src: url(/font/Acrom/Acrom-Regular.eot) format("eot"), url(/font/Acrom/Acrom-Regular.ttf) format("ttf"), url(/font/Acrom/Acrom-Regular.woff) format("woff"), url(/font/Acrom/Acrom-Regular.woff2) format("woff2"); }
+  src: url("../font/Acrom/Acrom-Regular.eot") format("eot"), url("../font/Acrom/Acrom-Regular.ttf") format("ttf"), url("../font/Acrom/Acrom-Regular.woff") format("woff"), url("../font/Acrom/Acrom-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 600;
-  src: url(/font/Acrom/Acrom-Medium.eot) format("eot"), url(/font/Acrom/Acrom-Medium.ttf) format("ttf"), url(/font/Acrom/Acrom-Medium.woff) format("woff"), url(/font/Acrom/Acrom-Medium.woff2) format("woff2"); }
+  src: url("../font/Acrom/Acrom-Medium.eot") format("eot"), url("../font/Acrom/Acrom-Medium.ttf") format("ttf"), url("../font/Acrom/Acrom-Medium.woff") format("woff"), url("../font/Acrom/Acrom-Medium.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 800;
-  src: url(/font/Acrom/Acrom-Bold.eot) format("eot"), url(/font/Acrom/Acrom-Bold.ttf) format("ttf"), url(/font/Acrom/Acrom-Bold.woff) format("woff"), url(/font/Acrom/Acrom-Bold.woff2) format("woff2"); }
+  src: url("../font/Acrom/Acrom-Bold.eot") format("eot"), url("../font/Acrom/Acrom-Bold.ttf") format("ttf"), url("../font/Acrom/Acrom-Bold.woff") format("woff"), url("../font/Acrom/Acrom-Bold.woff2") format("woff2"); }
 
 html {
   font-size: 62.5%; }
@@ -829,9 +829,16 @@ body {
 
 @media screen and (min-width: 960px) and (max-width: 1199px) {
   .header {
-    height: 160px; }
+    height: 260px; }
   .container {
     max-width: 640px; }
+  .header__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .header__logo {
+    margin-top: 10px; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -928,7 +935,7 @@ body {
     position: relative;
     left: 120px; }
   .footer-bottom__btn {
-    padding: 6px 26px;
+    padding: 6px 20px;
     right: 80px; }
   .footer-bottom__social ul {
     list-style-type: none;
@@ -937,9 +944,16 @@ body {
 
 @media screen and (min-width: 760px) and (max-width: 959px) {
   .header {
-    height: 170px; }
+    height: 260px; }
   .container {
     max-width: 580px; }
+  .header__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .header__logo {
+    margin-top: 10px; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1052,7 +1066,7 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 759px) {
   .header {
-    height: 270px; }
+    height: 260px; }
   .container {
     max-width: 350px; }
   .header__content {
@@ -1061,8 +1075,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column; }
   .header__logo {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 10px; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1080,7 +1093,6 @@ body {
     min-width: 300px;
     height: 100%; }
   .header__box {
-    margin-top: 10px;
     margin-bottom: 10px;
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
@@ -1088,11 +1100,11 @@ body {
   .header__item {
     margin: 0 30px; }
     .header__item a {
-      padding-bottom: 14px; }
+      padding-bottom: 12px; }
   .header__nav ul {
     padding-top: 0; }
   .header__btn {
-    margin-top: 10px;
+    margin-bottom: 15px;
     padding: 6px 20px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -1152,7 +1164,8 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .footer-bottom {
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: 30%; }
   .footer-top__logo img {
     margin-top: 20px;
     width: 54px;
@@ -1322,7 +1335,8 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .footer-bottom {
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: 30%; }
   .footer-top__logo img {
     margin-top: 20px;
     width: 54px;
