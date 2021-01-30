@@ -75,10 +75,10 @@ body {
     &:active,
     &:focus {
       outline: 0;
+      -webkit-tap-highlight-color: transparent;
     }
     &:active {
       text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
-      -webkit-tap-highlight-color: transparent;
     }
   }
 }

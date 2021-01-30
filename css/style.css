@@ -173,10 +173,10 @@ body {
       color: #237c80;
       border-bottom: 3px solid #237c80; }
     .header__item a:active, .header__item a:focus {
-      outline: 0; }
-    .header__item a:active {
-      text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
+      outline: 0;
       -webkit-tap-highlight-color: transparent; }
+    .header__item a:active {
+      text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5); }
 
 .block-btn {
   font-size: 1.6rem;
