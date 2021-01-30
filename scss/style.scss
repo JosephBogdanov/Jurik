@@ -78,6 +78,7 @@ body {
     }
     &:active {
       text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
@@ -516,7 +517,7 @@ body {
 }
 
 .footer {
-  height: 350px;
+  height: 370px;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
@@ -532,7 +533,7 @@ body {
   align-items: center;
 }
 .footer-top {
-  height: 66%;
+  height: 70%;
 }
 .footer-top__logo img {
   width: 90px;
@@ -600,8 +601,18 @@ body {
     color: inherit;
   }
 }
+.span-container {
+  width: 270px;
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  & span.relative {
+    position: relative;
+    right: 73px;
+  }
+}
 .footer-bottom {
-  height: 33%;
+  height: 30%;
 }
 .footer-bottom__copyright {
   color: $main-color;

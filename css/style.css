@@ -175,7 +175,8 @@ body {
     .header__item a:active, .header__item a:focus {
       outline: 0; }
     .header__item a:active {
-      text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5); }
+      text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
+      -webkit-tap-highlight-color: transparent; }
 
 .block-btn {
   font-size: 1.6rem;
@@ -626,7 +627,7 @@ body {
   color: #717171; }
 
 .footer {
-  height: 350px;
+  height: 370px;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   -webkit-box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
@@ -652,7 +653,7 @@ body {
           align-items: center; }
 
 .footer-top {
-  height: 66%; }
+  height: 70%; }
 
 .footer-top__logo img {
   width: 90px;
@@ -725,8 +726,19 @@ body {
     text-decoration: none;
     color: inherit; }
 
+.span-container {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 20px; }
+  .span-container span.relative {
+    position: relative;
+    right: 73px; }
+
 .footer-bottom {
-  height: 33%; }
+  height: 30%; }
 
 .footer-bottom__copyright {
   color: #237c80;
@@ -1156,6 +1168,8 @@ body {
     justify-items: center; }
   .footer {
     height: 770px; }
+  .footer-top {
+    height: 66%; }
   .footer-top,
   .footer-bottom {
     min-width: 240px;
@@ -1184,6 +1198,12 @@ body {
     text-align: center;
     padding: 0;
     margin: 0; }
+    .footer-top__menu p,
+    .footer-top__contacts p {
+      padding-left: 0; }
+  .span-container span.relative {
+    position: relative;
+    right: 36px; }
   .footer-top__menu {
     margin-bottom: 10px; }
   .footer-bottom__copyright {
@@ -1271,6 +1291,10 @@ body {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
+  .section__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .filter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1329,6 +1353,8 @@ body {
     display: none; }
   .footer {
     height: 770px; }
+  .footer-top {
+    height: 66%; }
   .footer-top,
   .footer-bottom {
     min-width: 240px;
@@ -1357,6 +1383,12 @@ body {
     text-align: center;
     padding: 0;
     margin: 0; }
+    .footer-top__menu p,
+    .footer-top__contacts p {
+      padding-left: 0; }
+  .span-container span.relative {
+    position: relative;
+    right: 36px; }
   .footer-top__menu {
     margin-bottom: 10px; }
   .footer-bottom__copyright {
