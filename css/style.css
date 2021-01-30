@@ -179,9 +179,6 @@ body {
       text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5); }
 
 .block-btn {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   font-size: 1.6rem;
   border-radius: 25px;
   background-color: transparent;
