@@ -103,6 +103,7 @@ body {
   &:active,
   &:focus {
     outline: 0;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -121,6 +122,7 @@ body {
   &:active,
   &:focus {
     outline: 0;
+    -webkit-tap-highlight-color: transparent;
   }
   &:active {
     text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
@@ -147,6 +149,7 @@ body {
   }
   &:active {
     text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
+    -webkit-tap-highlight-color: transparent;
   }
 }
 .section {
@@ -236,6 +239,7 @@ body {
   &:active,
   &:focus {
     outline: 0;
+    -webkit-tap-highlight-color: transparent;
   }
   &:active {
     text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
@@ -324,6 +328,7 @@ body {
 .rating__value > label:active,
 .price__value > label:active {
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 .section__list {
   display: grid;
@@ -371,6 +376,7 @@ body {
   &:active,
   &:focus {
     outline: 0;
+    -webkit-tap-highlight-color: transparent;
   }
   &:active {
     text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
@@ -475,6 +481,7 @@ body {
       background-color: $frame-color;
       color: #fff;
       border-radius: 100%;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
@@ -496,6 +503,10 @@ body {
   }
   & a {
     position: relative;
+    &:active,
+    &:focus {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
   & i {
     position: absolute;
@@ -576,6 +587,7 @@ body {
     transition: 0.1s;
     &:active {
       text-shadow: 1px 1px 0 rgba(113, 113, 113, 1);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
@@ -628,6 +640,7 @@ body {
     &:active,
     &:focus {
       outline: 0;
+      -webkit-tap-highlight-color: transparent;
     }
     &:active {
       text-shadow: 1px 1px 0 rgba(35, 124, 128, 0.5);
@@ -651,6 +664,7 @@ body {
     transition: 0.1s;
     &:active {
       text-shadow: 1px 1px 0 rgba(113, 166, 225, 1);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
