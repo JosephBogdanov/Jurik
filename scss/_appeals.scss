@@ -181,15 +181,20 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
-.section__button {
+.message-button {
+  display: block;
+  width: 140px;
+  height: 35px;
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 4px 40px;
+  text-align: center;
+  padding: 0;
 }
-.message-item_bottom {
+.message-item__bottom {
   width: 260px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   & p {
     color: $text-color;
     font-size: 1.4rem;
@@ -201,6 +206,7 @@
   }
 }
 .section__button {
+  padding: 4px 40px;
   width: 310px;
   margin-top: 30px;
   & span {
@@ -209,6 +215,7 @@
     white-space: nowrap;
   }
 }
+
 .folder::before {
   content: '\e808';
   font-size: 2rem;

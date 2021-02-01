@@ -978,28 +978,36 @@ body {
   font-size: 1.6rem;
   font-weight: 600; }
 
-.section__button {
+.message-button {
+  display: block;
+  width: 140px;
+  height: 35px;
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 4px 40px; }
+  text-align: center;
+  padding: 0; }
 
-.message-item_bottom {
+.message-item__bottom {
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .message-item_bottom p {
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .message-item__bottom p {
     color: #717171;
     font-size: 1.4rem; }
-  .message-item_bottom span {
+  .message-item__bottom span {
     color: #237c80;
     font-size: 1.6rem;
     font-weight: 800; }
 
 .section__button {
+  padding: 4px 40px;
   width: 310px;
   margin-top: 30px; }
   .section__button span {
