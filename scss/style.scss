@@ -1,7 +1,6 @@
 @import 'reset';
 @import 'variables';
 @import 'fonts';
-
 html {
   font-size: 62.5%;
 }
@@ -672,4 +671,5 @@ body {
   position: relative;
   right: 30px;
 }
+@import 'appeals';
 @import 'adaptive';
