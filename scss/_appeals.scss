@@ -238,3 +238,143 @@
     margin-top: 15px;
   }
 }
+.popup-background {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+}
+.popup-background:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup {
+  display: block;
+  width: 700px;
+  height: 720px;
+  background: #f9f9f9;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  & h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    margin: 5px auto;
+    text-align: center;
+  }
+}
+
+.popup__close {
+  position: relative;
+  top: -52px;
+  left: 640px;
+  font-size: 1.1rem;
+  color: $main-color;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $main-color;
+  border-radius: 100%;
+  &:hover {
+    display: block;
+    color: #fff;
+    background-color: $frame-color;
+    border-color: $frame-color;
+  }
+  & i {
+    position: absolute;
+    top: 5.5px;
+    right: 7.5px;
+  }
+}
+.input-container {
+  width: 550px;
+  height: 430px;
+  margin: 0 auto;
+}
+
+.popup__input {
+  top: 10px;
+  position: relative;
+  & textarea {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    position: relative;
+    text-align-last: left;
+    top: -20px;
+    border: none;
+    font-size: 1.6rem;
+    color: $text-color;
+    padding-right: 24px;
+    &::placeholder {
+      color: $not-active-color;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) inset;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $frame-color;
+      border-radius: 5px;
+    }
+  }
+}
+.popup__input::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  right: -35px;
+  top: -40px;
+  bottom: -10px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.popup__button-add-file {
+  position: relative;
+  left: 60px;
+  top: 30px;
+  display: block;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: $text-color;
+  text-align: left;
+  font-weight: 600;
+  & i {
+    font-size: 3rem;
+    color: $main-color;
+    text-align: center;
+    position: relative;
+    top: 5px;
+  }
+}
+.popup__button-question {
+  top: 55px;
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}

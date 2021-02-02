@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/fontello.css" type="text/css">
     <title>Юрик.ру - юридические услуги.</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+        document.querySelector('[href="#popup"]').addEventListener('click',function(){
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#popup').style.marginLeft = scrollbar;
+      });
+        document.querySelector('[href="#close-popup"]').addEventListener('click',function(){
+        document.body.style.overflow = 'visible';
+        document.querySelector('#popup').style.marginLeft = '0px';
+      });
+    });</script>
   </head>
   <body>
     <header class="header">
@@ -28,7 +40,7 @@
             <ul>
               <li class="header__item"><a href="../Jurik/appeals.html" aria-label="Перейти к обращению">Обращения</a></li>
               <li class="header__item"><a href="../Jurik/index.html" aria-label="Перейти на страницу с юристами">Юристы</a></li>
-              <li class="header__item"><a href="#" aria-label="Перейти к счетам">Счета</a></li>
+              <li class="header__item"><a href="../Jurik/bills.html" aria-label="Перейти к счетам">Счета</a></li>
             </ul>
           </nav>
           <button class="header__btn block-btn" aria-label="Создать обращение">Создать обращение</button>
@@ -247,7 +259,7 @@
                 <i class="icon-star active" alt=""></i>
                 <i class="icon-star active" alt=""></i>
                 <i class="icon-star active" alt=""></i>
-                <i class="icon-star" alt=""></i>
+                <i class="icon-star active" alt=""></i>
                 <i class="icon-star" alt=""></i>
               </div>
               <span class="item-name message-name">Иван Адвокатыч</span>
@@ -264,9 +276,37 @@
             <button class="section__button block-btn" aria-label="Прикрепленные файлы">
               <span class="icon-folder folder">Прикрепленные файлы</span>
             </button>
-            <a href="#"aria-label="Задать вопрос">Задать вопрос</a>
+            <a href="../Jurik/appeals.html#popup" aria-label="Задать вопрос">Задать вопрос</a>
           </section>       
-      </section>      
+      </section>
+      <div class="popup-background" id="popup">
+        <div class="popup">
+          <div class="popup__container">
+            <h2>Ваш вопрос</h2>
+            <a href="#close-popup" class="popup__close" aria-label="Закрыть модальное окно"><i class="icon-cancel" alt=""></i></a>        
+            <div class="popup__input input-container">
+              <textarea name ="question" placeholder="Опишите вашу ситуацию ...">Защита интересов в уголовном процессе требует от юриста максимальной концентрации на деле.
+
+Крайне важна отработка правовой позиции и максимально оптимизированной стратегии защиты, в которой будут учтены и грамотно представлены все обстоятельства дела.
+
+Адвокат по уголовному делу отвечает за каждое принятое решение и корректность правовой позиции по делу в целом.В нашей компании права клиентов защищают опытные адвокаты, в прошлом следователи и оперативники, изнутри изучившие все особенности ведения следствия в Российской Федерации.
+
+Квалифицированная помощь нужна не только, когда вас обвиняют в преступлении.
+
+Для того, чтобы отстоять свои права жертвам преступлений также понадобиться помощь профессионалов. Перечень услуг адвоката по уголовным делам зависит от вашего статуса в уголовном процессе.
+
+Мы представляем права всех категорий лиц в криминальных делах: Потерпевших Свидетелей Подозреваемых Обвиняемых Подсудимых Осужденных
+
+Задача каждого хорошего адвоката — проследить за тем, чтобы в ходе следствия права доверителя не были нарушены, а в суде — доказать невиновность клиента, несостоятельность обвинений и выдвинутых против него улик, а в случае, когда вина очевидна и может быть доказана, сделать все возможное, чтобы наказание было минимальным. Без грамотного, заинтересованного в благополучном исходе дела уголовного юриста, на правосудие и милосердие рассчитывать не приходится.
+
+Хороший адвокат держит родственников в курсе ситуации, посещает своего доверителя в СИЗО, обжалует действия/бездействия следоватя или </textarea></div>
+            <button class=" popup__button-add-file" aria-label="прикрепить файл">
+              <i class="icon-add-file"></i>
+              Прикрепить файл</button>
+            <button class="block-btn popup__button-question" aria-label="Задать вопрос">Задать вопрос</button>
+          </div>          
+        </div>
+      </div>      
     </section>
     <footer class="footer">
       <div class="container footer-top">
@@ -283,7 +323,7 @@
             <ul>
               <li class="footer-top__item"><a href="../Jurik/appeals.html" aria-label="Переход к обращению">Обращения</a></li>
               <li class="footer-top__item"><a href="../Jurik/index.html" aria-label="Переход к странице с юристами">Юристы</a></li>
-              <li class="footer-top__item"><a href="#" aria-label="Переход к счетам">Счета</a></li>
+              <li class="footer-top__item"><a href="../Jurik/bills.html" aria-label="Переход к счетам">Счета</a></li>
             </ul>            
           </nav>
           <div class="footer-top__contacts" title="Контакты" itemscope itemtype="http://schema.org/Organization">
