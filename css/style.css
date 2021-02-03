@@ -1210,7 +1210,13 @@ body {
   font-size: 1.6rem;
   color: #717171;
   text-align: left;
-  font-weight: 600; }
+  font-weight: 600;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer; }
+  .popup__button-add-file:active {
+    text-shadow: 1px 1px 0 #717171;
+    -webkit-tap-highlight-color: transparent; }
   .popup__button-add-file i {
     font-size: 3rem;
     color: #237c80;

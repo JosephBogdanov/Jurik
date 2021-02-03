@@ -409,6 +409,12 @@
   color: $text-color;
   text-align: left;
   font-weight: 600;
+  transition: 0.1s;
+  cursor: pointer;
+  &:active {
+    text-shadow: 1px 1px 0 $text-color;
+    -webkit-tap-highlight-color: transparent;
+  }
   & i {
     font-size: 3rem;
     color: $main-color;
