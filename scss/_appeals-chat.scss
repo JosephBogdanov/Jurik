@@ -161,6 +161,7 @@
   & i {
     color: $frame-color;
     transition: 0.1s;
+    z-index: 1;
     &:active {
       color: $item-background-color;
       -webkit-tap-highlight-color: transparent;

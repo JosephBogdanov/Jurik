@@ -171,7 +171,7 @@ body {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
     .header__item a:hover {
-      font-weight: 700;
+      text-shadow: 1px 1px 0 #237c80;
       color: #237c80;
       border-bottom: 3px solid #237c80; }
     .header__item a:active, .header__item a:focus {
@@ -967,7 +967,8 @@ body {
   .message-open--incoming i {
     color: #71a6e1;
     -webkit-transition: 0.1s;
-    transition: 0.1s; }
+    transition: 0.1s;
+    z-index: 1; }
     .message-open--incoming i:active {
       color: #fff;
       -webkit-tap-highlight-color: transparent; }
