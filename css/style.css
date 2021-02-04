@@ -963,8 +963,10 @@ body {
   border: 1px solid #237c80;
   background-color: #fff;
   -webkit-transition: 0.1s;
-  transition: 0.1s; }
+  transition: 0.1s;
+  position: relative; }
   .message-open--incoming i {
+    border-radius: 100%;
     color: #71a6e1;
     -webkit-transition: 0.1s;
     transition: 0.1s;
@@ -976,6 +978,14 @@ body {
     display: block;
     background-color: #237c80;
     -webkit-tap-highlight-color: transparent; }
+
+.icon-open::before {
+  content: '\e81e';
+  position: absolute;
+  top: -5px;
+  right: -28px;
+  display: block;
+  padding: 5px 10px; }
 
 .message-top__avatar {
   display: block;
