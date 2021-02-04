@@ -158,7 +158,9 @@
   border: 1px solid $main-color;
   background-color: $item-background-color;
   transition: 0.1s;
+  position: relative;
   & i {
+    border-radius: 100%;
     color: $frame-color;
     transition: 0.1s;
     z-index: 1;
@@ -172,6 +174,14 @@
     background-color: $main-color;
     -webkit-tap-highlight-color: transparent;
   }
+}
+.icon-open::before {
+  content: '\e81e';
+  position: absolute;
+  top: -5px;
+  right: -28px;
+  display: block;
+  padding: 5px 10px;
 }
 .message-top__avatar {
   display: block;
