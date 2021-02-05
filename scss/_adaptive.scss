@@ -513,6 +513,7 @@
 @media screen and (min-width: 480px) and (max-width: 759px) {
   .header {
     height: 260px;
+    z-index: 0;
   }
   .container {
     max-width: 350px;
@@ -739,6 +740,7 @@
   .header {
     min-width: 320px;
     height: 370px;
+    z-index: 0;
   }
   .container {
     max-width: 280px;
