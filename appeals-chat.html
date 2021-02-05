@@ -11,20 +11,7 @@
     <meta property="og:url" content="https://Jurik.ru"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/fontello.css" type="text/css">
-    <title>Юрик.ру - юридические услуги.</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function(){
-        var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-        document.querySelector('[href="../Jurik/appeals-chat.html#popup"]').addEventListener('click',function(){
-        document.body.style.overflow = 'hidden';
-        document.body.style.marginLeft='-17px';        
-      });
-        document.querySelector('[href="#close-popup"]').addEventListener('click',function(){
-        document.body.style.overflow = 'visible';
-        document.body.style.marginLeft='0';
-      });
-    });
-    </script>
+    <title>Юрик.ру - юридические услуги.</title>    
   </head>
   <body>
     <header class="header">
@@ -376,5 +363,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+        document.querySelector('[href="../Jurik/appeals-chat.html#popup"]').addEventListener('click',function(){
+        document.body.style.overflow = 'hidden';
+        // document.body.style.marginLeft='-17px';        
+      });
+        document.querySelector('[href="#close-popup"]').addEventListener('click',function(){
+        document.body.style.overflow = 'visible';
+        // document.body.style.marginLeft='0';
+      });
+    });
+    </script>
   </body>
 </html>

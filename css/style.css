@@ -1737,10 +1737,14 @@ body {
   .message-open {
     position: absolute;
     left: 425px;
-    bottom: 15px; } }
-
-.message-paginator ul {
-  text-align: center; }
+    bottom: 15px; }
+  .message-paginator ul {
+    text-align: center; }
+  .popup {
+    height: 550px;
+    top: 280px; }
+  .input-container {
+    height: 270px; } }
 
 @media screen and (min-width: 760px) and (max-width: 959px) {
   .header {
@@ -1902,10 +1906,18 @@ body {
   .message-open {
     position: absolute;
     left: 425px;
-    bottom: 15px; } }
-
-.message-paginator ul {
-  text-align: center; }
+    bottom: 15px; }
+  .message-paginator ul {
+    text-align: center; }
+  .popup {
+    width: 600px;
+    height: 550px;
+    top: 280px; }
+  .input-container {
+    height: 270px;
+    width: 450px; }
+  .popup__close {
+    left: 540px; } }
 
 @media screen and (min-width: 480px) and (max-width: 759px) {
   .header {
@@ -2108,12 +2120,22 @@ body {
   .message-open {
     position: absolute;
     left: 295px;
-    bottom: 15px; } }
-
-.message-paginator ul {
-  text-align: center; }
+    bottom: 15px; }
+  .message-paginator ul {
+    text-align: center; }
+  .popup {
+    width: 400px;
+    height: 550px;
+    top: 150px; }
+  .input-container {
+    height: 270px;
+    width: 290px; }
+  .popup__close {
+    left: 350px; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    overflow-x: hidden; }
   .header {
     height: 370px; }
   .container {
@@ -2342,7 +2364,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 150px;
-    width: 440px;
+    width: 290px;
     margin-top: 20px; }
   .chat__message {
     width: 300px;
@@ -2361,4 +2383,20 @@ body {
   .message-open {
     position: absolute;
     left: 250px;
-    bottom: 15px; } }
+    bottom: 15px; }
+  .message-paginator ul {
+    text-align: center; }
+  .popup {
+    width: 300px;
+    height: 550px;
+    top: 390px;
+    margin: 0px auto;
+    top: 150px; }
+  .input-container {
+    height: 270px;
+    width: 200px; }
+  .popup__close {
+    left: 250px; }
+  .popup__button-add-file {
+    left: 30px;
+    width: 250px; } }
