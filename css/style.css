@@ -2137,6 +2137,7 @@ body {
   body {
     overflow-x: hidden; }
   .header {
+    min-width: 320px;
     height: 370px; }
   .container {
     max-width: 280px; }
@@ -2391,7 +2392,7 @@ body {
     height: 550px;
     top: 390px;
     margin: 0px auto;
-    top: 150px; }
+    top: 130px; }
   .input-container {
     height: 270px;
     width: 200px; }
