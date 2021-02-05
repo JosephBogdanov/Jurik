@@ -1499,7 +1499,7 @@ body {
     left: 545px;
     bottom: 15px; }
   .popup {
-    top: 120px; } }
+    top: 180px; } }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
@@ -1581,7 +1581,7 @@ body {
     left: 395px;
     bottom: 15px; }
   .popup {
-    top: 120px; } }
+    top: 180px; } }
 
 @media screen and (min-width: 960px) and (max-width: 1199px) {
   .header {
@@ -1746,7 +1746,7 @@ body {
     text-align: center; }
   .popup {
     height: 550px;
-    top: 150px; }
+    top: 310px; }
   .input-container {
     height: 270px; } }
 
@@ -1916,7 +1916,7 @@ body {
   .popup {
     width: 600px;
     height: 550px;
-    top: 150px; }
+    top: 310px; }
   .input-container {
     height: 270px;
     width: 450px; }
@@ -2131,7 +2131,7 @@ body {
   .popup {
     width: 400px;
     height: 550px;
-    top: 150px; }
+    top: 20px; }
   .input-container {
     height: 270px;
     width: 290px; }
