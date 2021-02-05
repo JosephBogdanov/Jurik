@@ -51,6 +51,9 @@
     left: 545px;
     bottom: 15px;
   }
+  .popup {
+    top: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -140,6 +143,9 @@
     position: absolute;
     left: 395px;
     bottom: 15px;
+  }
+  .popup {
+    top: 120px;
   }
 }
 
@@ -316,7 +322,7 @@
   }
   .popup {
     height: 550px;
-    top: 280px;
+    top: 150px;
   }
   .input-container {
     height: 270px;
@@ -499,7 +505,7 @@
   .popup {
     width: 600px;
     height: 550px;
-    top: 280px;
+    top: 150px;
   }
   .input-container {
     height: 270px;

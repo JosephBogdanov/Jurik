@@ -1497,7 +1497,9 @@ body {
   .message-open {
     position: absolute;
     left: 545px;
-    bottom: 15px; } }
+    bottom: 15px; }
+  .popup {
+    top: 120px; } }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
@@ -1577,7 +1579,9 @@ body {
   .message-open {
     position: absolute;
     left: 395px;
-    bottom: 15px; } }
+    bottom: 15px; }
+  .popup {
+    top: 120px; } }
 
 @media screen and (min-width: 960px) and (max-width: 1199px) {
   .header {
@@ -1742,7 +1746,7 @@ body {
     text-align: center; }
   .popup {
     height: 550px;
-    top: 280px; }
+    top: 150px; }
   .input-container {
     height: 270px; } }
 
@@ -1912,7 +1916,7 @@ body {
   .popup {
     width: 600px;
     height: 550px;
-    top: 280px; }
+    top: 150px; }
   .input-container {
     height: 270px;
     width: 450px; }
