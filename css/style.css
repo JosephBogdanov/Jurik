@@ -1953,16 +1953,21 @@ body {
     width: 450px; }
   .popup__close {
     left: 540px; }
-  .section__table::before {
-    content: '';
-    left: -15px;
-    right: -15px; }
+  .section__table {
+    width: 540px;
+    margin: 0 auto; }
+    .section__table::before {
+      content: '';
+      left: -15px;
+      right: -15px; }
   .section__table table {
+    width: 530px;
+    margin: 0 auto;
     border-spacing: 25px; }
     .section__table table tr {
       width: 450px; }
       .section__table table tr.not-paid::after {
-        width: 550px;
+        width: 510px;
         right: 15px;
         height: 150px;
         margin-top: -150px; }

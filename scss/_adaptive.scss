@@ -570,6 +570,8 @@
   }
   // ==========Adaptive for bills=============
   .section__table {
+    width: 540px;
+    margin: 0 auto;
     &::before {
       content: '';
       left: -15px;
@@ -577,11 +579,13 @@
     }
   }
   .section__table table {
+    width: 530px;
+    margin: 0 auto;
     border-spacing: 25px;
     & tr {
       width: 450px;
       &.not-paid::after {
-        width: 550px;
+        width: 510px;
         right: 15px;
         height: 150px;
         margin-top: -150px;
