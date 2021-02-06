@@ -54,8 +54,19 @@
   .popup {
     top: 180px;
   }
+  // ==========Adaptive for bills=============
+  .section__table table {
+    & tr {
+      &.not-paid::after {
+        width: 1110px;
+      }
+    }
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
     max-width: 900px;
@@ -147,8 +158,19 @@
   .popup {
     top: 180px;
   }
+  // ==========Adaptive for bills=============
+  .section__table table {
+    & tr {
+      &.not-paid::after {
+        width: 910px;
+      }
+    }
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 @media screen and (min-width: 960px) and (max-width: 1199px) {
   .header {
     height: 260px;
@@ -326,6 +348,18 @@
   }
   .input-container {
     height: 270px;
+  }
+  // ==========Adaptive for bills=============
+  .section__table table {
+    & tr {
+      &.not-paid::after {
+        width: 650px;
+      }
+    }
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -513,6 +547,46 @@
   }
   .popup__close {
     left: 540px;
+  }
+  // ==========Adaptive for bills=============
+  .section__table {
+    &::before {
+      content: '';
+      left: -15px;
+      right: -15px;
+    }
+  }
+  .section__table table {
+    border-spacing: 25px;
+    & tr {
+      width: 450px;
+      &.not-paid::after {
+        width: 550px;
+        right: 15px;
+        height: 150px;
+        margin-top: -150px;
+      }
+      & td {
+        display: flex;
+        justify-content: space-between;
+        border-right: none !important;
+        &:last-child {
+        }
+        &::before {
+          display: block;
+          content: attr(data-label);
+          color: $text-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  table tr:first-child {
+    display: none;
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -737,8 +811,67 @@
   .popup__close {
     left: 350px;
   }
+  // ==========Adaptive for bills=============
+  .section__table {
+    &::before {
+      content: '';
+      left: -15px;
+      right: -15px;
+    }
+  }
+  .section__table table {
+    border-spacing: 25px;
+    & tr {
+      width: 450px;
+      &.not-paid::after {
+        width: 320px;
+        right: 15px;
+        height: 150px;
+        margin-top: -150px;
+      }
+      & td {
+        display: flex;
+        justify-content: space-between;
+        border-right: none !important;
+        &:last-child {
+        }
+        &::before {
+          display: block;
+          content: attr(data-label);
+          color: $text-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  table tr:first-child {
+    display: none;
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .appeals__item {
+    width: 350px;
+    height: 600px;
+    padding: 15px;
+  }
+  .item__status {
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .item__top {
+    & b {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .top-span {
+    padding-top: 5px;
+  }
 }
-
 @media screen and (min-width: 320px) and (max-width: 479px) {
   body {
     overflow-x: hidden;
@@ -1014,5 +1147,73 @@
   .popup__button-add-file {
     left: 30px;
     width: 250px;
+  }
+  // ==========Adaptive for bills=============
+  .section__table {
+    &::before {
+      content: '';
+      left: -10px;
+      right: -10px;
+    }
+  }
+  .section__table table {
+    border-spacing: 25px;
+    & tr {
+      width: 450px;
+      &.not-paid::after {
+        width: 250px;
+        right: 15px;
+        height: 150px;
+        margin-top: -150px;
+      }
+      & td {
+        display: flex;
+        justify-content: space-between;
+        border-right: none !important;
+        &::before {
+          display: block;
+          content: attr(data-label);
+          color: $text-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  table tr:first-child {
+    display: none;
+  }
+  // ==========Adaptive for appeals=============
+  .appeals__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 25px;
+  }
+  .appeals__item {
+    width: 280px;
+    height: 740px;
+    padding: 15px;
+  }
+  .item__status {
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .item__top {
+    & b {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .top-span {
+    padding-top: 5px;
+  }
+  .item__bottom {
+    flex-direction: column;
+  }
+  .appeals-avatar {
+    margin: 0 auto;
+  }
+  .block-btn--bottom {
+    margin-left: 60px;
   }
 }

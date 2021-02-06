@@ -26,7 +26,7 @@
     }
     &.not-paid::after {
       position: absolute;
-      content: '123';
+      content: '';
       display: block;
       width: 1310px;
       height: 30px;
