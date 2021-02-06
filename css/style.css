@@ -1450,7 +1450,9 @@ body {
 
 @media screen and (min-width: 1600px) {
   .popup-background {
-    height: 2761px; } }
+    height: 2761px; }
+  .popup {
+    top: 180px; } }
 
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .container {
