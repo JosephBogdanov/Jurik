@@ -1,3 +1,8 @@
+@media screen and (min-width: 1600px) {
+  .popup-background {
+    height: 2761px;
+  }
+}
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .container {
     max-width: 1100px;
@@ -50,6 +55,9 @@
     position: absolute;
     left: 545px;
     bottom: 15px;
+  }
+  .popup-background {
+    height: 2761px;
   }
   .popup {
     top: 180px;
@@ -154,6 +162,9 @@
     position: absolute;
     left: 395px;
     bottom: 15px;
+  }
+  .popup-background {
+    height: 2821px;
   }
   .popup {
     top: 180px;
@@ -341,6 +352,9 @@
     ul {
       text-align: center;
     }
+  }
+  .popup-background {
+    height: 3541px;
   }
   .popup {
     height: 550px;
@@ -535,6 +549,9 @@
     ul {
       text-align: center;
     }
+  }
+  .popup-background {
+    height: 3541px;
   }
   .popup {
     width: 600px;
@@ -798,6 +815,9 @@
     ul {
       text-align: center;
     }
+  }
+  .popup-background {
+    height: 3911px;
   }
   .popup {
     width: 400px;
@@ -1129,6 +1149,9 @@
     ul {
       text-align: center;
     }
+  }
+  .popup-background {
+    height: 4130px;
   }
   .popup {
     width: 300px;

@@ -1096,7 +1096,7 @@ body {
 .popup-background {
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1448,6 +1448,10 @@ body {
   font-weight: 400;
   margin-top: 15px; }
 
+@media screen and (min-width: 1600px) {
+  .popup-background {
+    height: 2761px; } }
+
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .container {
     max-width: 1100px; }
@@ -1498,6 +1502,8 @@ body {
     position: absolute;
     left: 545px;
     bottom: 15px; }
+  .popup-background {
+    height: 2761px; }
   .popup {
     top: 180px; }
   .section__table table tr.not-paid::after {
@@ -1585,6 +1591,8 @@ body {
     position: absolute;
     left: 395px;
     bottom: 15px; }
+  .popup-background {
+    height: 2821px; }
   .popup {
     top: 180px; }
   .section__table table tr.not-paid::after {
@@ -1754,6 +1762,8 @@ body {
     bottom: 15px; }
   .message-paginator ul {
     text-align: center; }
+  .popup-background {
+    height: 3541px; }
   .popup {
     height: 550px;
     top: 310px; }
@@ -1928,6 +1938,8 @@ body {
     bottom: 15px; }
   .message-paginator ul {
     text-align: center; }
+  .popup-background {
+    height: 3541px; }
   .popup {
     width: 600px;
     height: 550px;
@@ -2174,6 +2186,8 @@ body {
     bottom: 15px; }
   .message-paginator ul {
     text-align: center; }
+  .popup-background {
+    height: 3911px; }
   .popup {
     width: 400px;
     height: 550px;
@@ -2489,6 +2503,8 @@ body {
     bottom: 15px; }
   .message-paginator ul {
     text-align: center; }
+  .popup-background {
+    height: 4130px; }
   .popup {
     width: 300px;
     height: 550px;
