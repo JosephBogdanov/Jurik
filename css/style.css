@@ -1156,6 +1156,8 @@ body {
     color: #fff;
     background-color: #71a6e1;
     border-color: #71a6e1; }
+  .popup__close:active {
+    -webkit-tap-highlight-color: transparent; }
   .popup__close i {
     position: absolute;
     top: 5.5px;

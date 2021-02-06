@@ -353,6 +353,9 @@
     background-color: $frame-color;
     border-color: $frame-color;
   }
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
   & i {
     position: absolute;
     top: 5.5px;
