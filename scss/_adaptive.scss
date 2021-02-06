@@ -151,6 +151,10 @@
   .chat__message {
     width: 450px;
   }
+  .message-item {
+    width: 310px;
+    height: 400px;
+  }
   .message-bottom {
     & p {
       position: relative;
@@ -532,6 +536,10 @@
     position: relative;
     left: 100px;
     background-color: $frame-color;
+  }
+  .message-item {
+    width: 310px;
+    height: 400px;
   }
   .message-bottom {
     & p {

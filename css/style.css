@@ -1596,6 +1596,9 @@ body {
     margin-top: 20px; }
   .chat__message {
     width: 450px; }
+  .message-item {
+    width: 310px;
+    height: 400px; }
   .message-bottom p {
     position: relative;
     overflow: hidden;
@@ -1941,6 +1944,9 @@ body {
     position: relative;
     left: 100px;
     background-color: #71a6e1; }
+  .message-item {
+    width: 310px;
+    height: 400px; }
   .message-bottom p {
     position: relative;
     overflow: hidden;
