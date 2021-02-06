@@ -2548,8 +2548,8 @@ body {
     width: 250px; }
   .section__table::before {
     content: '';
-    left: -10px;
-    right: -10px; }
+    left: -5px;
+    right: -5px; }
   .section__table table {
     border-spacing: 25px; }
     .section__table table tr {
