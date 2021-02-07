@@ -66,3 +66,9 @@ textarea,
 select {
   font: inherit;
 }
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

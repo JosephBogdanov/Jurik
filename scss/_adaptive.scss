@@ -220,8 +220,11 @@
     margin: 0 30px;
     a {
       padding-bottom: 12px;
+      border-bottom: none;
       &:hover {
-        border-bottom: none;
+        &::after {
+          display: none;
+        }
       }
     }
   }
@@ -414,8 +417,11 @@
     margin: 0 30px;
     a {
       padding-bottom: 12px;
+      border: none;
       &:hover {
-        border-bottom: none;
+        &::after {
+          display: none;
+        }
       }
     }
   }
@@ -659,8 +665,11 @@
     margin: 0 30px;
     a {
       padding-bottom: 12px;
+      border: none;
       &:hover {
-        border-bottom: none;
+        &::after {
+          display: none;
+        }
       }
     }
   }
@@ -949,8 +958,11 @@
     margin: 0 30px;
     a {
       padding-bottom: 12px;
+      border: none;
       &:hover {
-        border-bottom: none;
+        &::after {
+          display: none;
+        }
       }
     }
   }
