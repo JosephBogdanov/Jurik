@@ -166,31 +166,33 @@ body {
 
 .header__item {
   margin: 0 30px;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
   .header__item a {
     display: block;
     padding-top: 15px;
-    padding-bottom: 36.9px;
+    padding-bottom: 15px;
     height: 100%;
     width: 100%;
     text-decoration: none;
     color: #717171;
-    position: relative;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    border-bottom: 2.5px solid #fff; }
+    position: relative; }
+    .header__item a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -24.2px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2.5px;
+      background-color: #fff;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
     .header__item a:hover {
       color: #237c80;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #237c80; }
       .header__item a:hover::after {
-        content: '';
-        position: absolute;
-        display: block;
-        bottom: -1.65px;
-        width: 100%;
-        height: 4px;
-        border-radius: 2.5px;
         background-color: #237c80; }
     .header__item a:active, .header__item a:focus {
       outline: 0;
@@ -236,7 +238,7 @@ body {
 
 .header__menu {
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   color: #237c80;
   cursor: pointer;
   -webkit-transition: 0.1s;
@@ -1673,8 +1675,9 @@ body {
   .header__item {
     margin: 0 30px; }
     .header__item a {
-      padding-bottom: 12px;
-      border-bottom: none; }
+      padding-bottom: 12px; }
+      .header__item a::after {
+        display: none; }
       .header__item a:hover::after {
         display: none; }
   .header__nav ul {
@@ -1848,8 +1851,9 @@ body {
   .header__item {
     margin: 0 30px; }
     .header__item a {
-      padding-bottom: 12px;
-      border: none; }
+      padding-bottom: 12px; }
+      .header__item a::after {
+        display: none; }
       .header__item a:hover::after {
         display: none; }
   .header__nav ul {
@@ -2071,8 +2075,9 @@ body {
   .header__item {
     margin: 0 30px; }
     .header__item a {
-      padding-bottom: 12px;
-      border: none; }
+      padding-bottom: 12px; }
+      .header__item a::after {
+        display: none; }
       .header__item a:hover::after {
         display: none; }
   .header__nav ul {
@@ -2343,8 +2348,9 @@ body {
   .header__item {
     margin: 0 30px; }
     .header__item a {
-      padding-bottom: 12px;
-      border: none; }
+      padding-bottom: 12px; }
+      .header__item a::after {
+        display: none; }
       .header__item a:hover::after {
         display: none; }
   .header__nav ul {
